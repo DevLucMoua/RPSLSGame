@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    public class Player_AI : Player
+    class Human : Player
     {
-  
+        public Human()
+        {
+
+        }
+
+        public void ChooseGesture()
+        {
+
+        }
     }
 }

@@ -43,11 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CPU.cs" />
+    <Compile Include="Human.cs" />
     <Compile Include="PlayableHand.cs" />
     <Compile Include="Gesture.cs" />
-    <Compile Include="Player AI.cs" />
-    <Compile Include="Player One.cs" />
-    <Compile Include="Player Two.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PlayGame.cs" />
     <Compile Include="Program.cs" />

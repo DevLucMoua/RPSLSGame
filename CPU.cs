@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Program
+    class CPU : Player
     {
-        static void Main(string[] args)
+        public CPU()
         {
-            PlayGame play = new PlayGame();
-            play.RunGame();
+
+        }
+
+        public void ChooseGesture()
+        {
+            gestures = new List<Gesture>();
         }
     }
 }
