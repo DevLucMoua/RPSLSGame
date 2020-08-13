@@ -10,6 +10,7 @@ namespace RPSLS
     {
         static void Main(string[] args)
         {
+            Player luc = new Player();
         }
     }
 }

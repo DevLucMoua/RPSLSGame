@@ -6,7 +6,27 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Player
+    public class Player
     {
+        //member variables
+        List<Gesture> gestures;
+        public string name;
+
+
+
+
+
+        //constructor
+        public Player()
+        {
+            Console.WriteLine("Choose player name; ");
+            Console.ReadLine();
+            this.name = Console.ReadLine();
+        }
+
+
+
+        //member methods
+
     }
 }

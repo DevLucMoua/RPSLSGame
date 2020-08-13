@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class PlayGame
-    {
+    public class PlayGame
+    { 
+        //member variables
+        
+
+
+
+
+
+        //constructor
+
+
+
+
+        //member methods
     }
 }
