@@ -27,7 +27,7 @@ namespace RPSLS
         {
             DisplayIntro();
             PlayerTwoSelection();
-            PlaySequence()
+            PlaySequence();
             DisplayWinner();
 
 
@@ -55,7 +55,7 @@ namespace RPSLS
             Console.WriteLine("Rock crushes Scissors. Scissors cuts Paper. Paper cpvers Rock. Rock crushes Lizard. Lizard poisons Spock.");
             Console.WriteLine("Spock smashes Scissors. Scissor decapitates Lizard. Liazrd eats Paper. Paper disproves Spock. Spock vaporizes Rock.");
             Console.WriteLine("Best of three is the winner!");
-            Console.Clear();
+            Console.ReadLine();
         }
 
         public void PlayerTwoSelection()
@@ -73,8 +73,10 @@ namespace RPSLS
         }
         public void PlaySequence()
         {
-            while (player1.playerScore >=1 && player2.playerScore <= 1)
+            while (player1.playerScore <=1 && player2.playerScore <= 1)
             {
+                player1.ChooseGesture();
+                player2.ChooseGesture();
                 CompareHand();
             }
             

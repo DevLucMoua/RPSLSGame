@@ -20,6 +20,8 @@ namespace RPSLS
             string input = Console.ReadLine();
             int index = Int32.Parse(input);
             string chosenGesture = gestures[index];
+            Console.WriteLine(chosenGesture);
+            Console.ReadLine();
 
         }
     }
