@@ -8,14 +8,18 @@ namespace RPSLS
 {
     class CPU : Player
     {
+        Random rnd;
         public CPU()
         {
-
+            
         }
 
-        public void ChooseGesture()
+        public override string ChooseGesture()
         {
-            gestures = new List<Gesture>();
+            int index = rnd.Next(0, 4);
+            string choosenGesture = gestures[index];
+            return choosenGesture;
+
         }
     }
 }

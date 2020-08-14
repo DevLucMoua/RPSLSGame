@@ -25,7 +25,7 @@ namespace RPSLS
         public void RunGame()
         {
             DisplayIntro();
-
+            PlayerTwoSelection();
 
             DisplayWinner();
 
@@ -40,7 +40,7 @@ namespace RPSLS
             {
                 Console.WriteLine("Player One is the winner!");
             }
-            else if(player1.playerScore >= 2)
+            else if(player2.playerScore >= 2)
             {
                 Console.WriteLine("Player Two wins... You lose");
             }
@@ -49,22 +49,40 @@ namespace RPSLS
         public void DisplayIntro()
         {
             Console.WriteLine("Welcome to RPSLS");
-            Console.Clear();
             Console.WriteLine("Rules");
-            Console.WriteLine("This game here is simply Rock, Paper, Scissor but with two exta playable hands: Lizard and Spock.");
+            Console.WriteLine("This game here is simply Rock, Paper, Scissor but with two extra playable hands: Lizard and Spock.");
             Console.WriteLine("Rock crushes Scissors. Scissors cuts Paper. Paper cpvers Rock. Rock crushes Lizard. Lizard poisons Spock.");
             Console.WriteLine("Spock smashes Scissors. Scissor decapitates Lizard. Liazrd eats Paper. Paper disproves Spock. Spock vaporizes Rock.");
             Console.WriteLine("Best of three is the winner!");
             Console.Clear();
         }
 
+        public void PlayerTwoSelection()
+        {
+            Console.WriteLine("Will two players be playing or just one. Type '2' for two players or '1' for one player");
+            string reponse = Console.ReadLine();
+            if (reponse == "2")
+            {
+                player2 = new Human();
+            }
+            else
+            {
+                player2 = new CPU();
+            }
+        }
         public void PlaySequence()
         {
-
+            while (player1.playerScore >=1 && player2.playerScore <= 1)
+            {
+         
+            }
+            
+           
         }
 
         public void CompareHand()
         {
+            if (player1.ChooseGesture();
 
         }
     }
