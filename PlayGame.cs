@@ -55,6 +55,7 @@ namespace RPSLS
             Console.WriteLine("Rock crushes Scissors. Scissors cuts Paper. Paper cpvers Rock. Rock crushes Lizard. Lizard poisons Spock.");
             Console.WriteLine("Spock smashes Scissors. Scissor decapitates Lizard. Liazrd eats Paper. Paper disproves Spock. Spock vaporizes Rock.");
             Console.WriteLine("Best of three is the winner!");
+            Console.WriteLine("Press any key to continue...");
             Console.ReadLine();
         }
 

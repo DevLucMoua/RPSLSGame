@@ -19,10 +19,8 @@ namespace RPSLS
             Console.WriteLine("0 for rock, 1 for paper, 2 for scissors, 3 for lizard, 4 for spock");
             string input = Console.ReadLine();
             int index = Int32.Parse(input);
-            string chosenGesture = gestures[index];
+            chosenGesture = gestures[index];
             Console.WriteLine(chosenGesture);
-            Console.ReadLine();
-
         }
     }
 }

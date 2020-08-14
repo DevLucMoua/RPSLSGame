@@ -18,9 +18,9 @@ namespace RPSLS
         {
             rnd = new Random();
             int index = rnd.Next(0, 4);
-            string chosenGesture = gestures[index];
+            chosenGesture = gestures[index];
             Console.WriteLine(chosenGesture);
-            Console.ReadLine();
+
 
         }
     }
