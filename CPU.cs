@@ -14,11 +14,10 @@ namespace RPSLS
             
         }
 
-        public override string ChooseGesture()
+        public override void ChooseGesture()
         {
             int index = rnd.Next(0, 4);
-            string choosenGesture = gestures[index];
-            return choosenGesture;
+            string chosenGesture = gestures[index];
 
         }
     }

@@ -11,7 +11,7 @@ namespace RPSLS
         //member variables
         public List<string> gestures;
         public int playerScore;
-        public string gesture;
+        public string chosenGesture;
 
 
 
@@ -30,7 +30,7 @@ namespace RPSLS
 
         //member methods
 
-        abstract public string ChooseGesture();
+        abstract public void ChooseGesture();
   
 
     }
