@@ -17,10 +17,13 @@ namespace RPSLS
         public override void ChooseGesture()
         {
             rnd = new Random();
-            int index = rnd.Next(0, 4);
-            chosenGesture = gestures[index];
-            Console.WriteLine(chosenGesture);
 
+            int index = rnd.Next(0, 4);
+
+            chosenGesture = gestures[index];
+
+            Console.WriteLine(chosenGesture);
+            Console.WriteLine();
 
         }
     }

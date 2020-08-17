@@ -80,19 +80,7 @@ namespace RPSLS
 
 
             }
-            //if (reponse == "2")
-            //{
-            //    player2 = new Human();
-            //}
-            //else if(reponse != "2")
-            //{
-            //    Console.WriteLine("Please enter '2' for two players or enter to continue.");
-
-            //}
-            //else
-            //{
-            //    player2 = new CPU();
-            //}
+          
         }
         public void PlaySequence()
         {
