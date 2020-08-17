@@ -61,16 +61,38 @@ namespace RPSLS
 
         public void PlayerTwoSelection()
         {
-            Console.WriteLine("Will two players be playing or just one. Type '2' for two players. Enter for single player.");
+
+            Console.WriteLine("Will two players be playing or just one? Type '2' for two players or type '1' for one player.");
             string reponse = Console.ReadLine();
-            if (reponse == "2")
+
+            switch (reponse)
             {
-                player2 = new Human();
+                case "2":
+                    player2 = new Human();
+                    break;
+                case "1":
+                    player2 = new CPU();
+                    break;
+                default:
+                    Console.WriteLine("Please enter '2' for two player or '1' for one playergame");
+                    PlayerTwoSelection();
+                    break;
+
+
             }
-            else
-            {
-                player2 = new CPU();
-            }
+            //if (reponse == "2")
+            //{
+            //    player2 = new Human();
+            //}
+            //else if(reponse != "2")
+            //{
+            //    Console.WriteLine("Please enter '2' for two players or enter to continue.");
+
+            //}
+            //else
+            //{
+            //    player2 = new CPU();
+            //}
         }
         public void PlaySequence()
         {
@@ -86,22 +108,7 @@ namespace RPSLS
 
         public void CompareHand()
         {
-            //if (player1.chosenGesture == player2.chosenGesture)
-            //{
-            //    Console.WriteLine("Draw! Shoot again");
-            //}
-            //if (player1.chosenGesture == "rock" && player2.chosenGesture == "paper" || player2.chosenGesture == "spock")
-            //{
-            //    Console.WriteLine("Player Two wins this round!");
-            //    player2.playerScore++;
-            //}
-            //else if (player1.chosenGesture == "paper" && player2.chosenGesture == "scissors" || player2.chosenGesture == "lizard")
-            //{
-            //    Console.WriteLine("Player Two wins this round!");
-            //    player2.playerScore++;
-            //}
-            //else { }
-
+           
 
             //player 2 wins
 
@@ -146,7 +153,7 @@ namespace RPSLS
                 Console.WriteLine("Player One wins this round!");
                 player1.playerScore++;
             }
-            else if ((player1.chosenGesture == "scissor" && (player2.chosenGesture == "lizard" || player2.chosenGesture == "paper")))
+            else if ((player1.chosenGesture == "scissors" && (player2.chosenGesture == "lizard" || player2.chosenGesture == "paper")))
             {
                 Console.WriteLine("Player One wins this round!");
                 player1.playerScore++;
