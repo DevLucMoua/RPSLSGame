@@ -37,7 +37,6 @@ namespace RPSLS
             }
             int index = Int32.Parse(input);
             chosenGesture = gestures[index];
-            Console.WriteLine(chosenGesture);
         }
     }
 }

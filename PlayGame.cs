@@ -96,7 +96,8 @@ namespace RPSLS
 
         public void CompareHand()
         {
-           
+            Console.WriteLine(player1.chosenGesture);
+            Console.WriteLine(player2.chosenGesture);
 
             //player 2 wins
 

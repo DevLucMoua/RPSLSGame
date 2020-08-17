@@ -22,8 +22,7 @@ namespace RPSLS
 
             chosenGesture = gestures[index];
 
-            Console.WriteLine(chosenGesture);
-            Console.WriteLine();
+            //Console.WriteLine(chosenGesture);
 
         }
     }
