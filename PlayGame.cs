@@ -13,6 +13,7 @@ namespace RPSLS
         //member variables
         public Player player1;
         public Player player2;
+        public string rounds;
 
 
 
@@ -27,6 +28,7 @@ namespace RPSLS
         {
             DisplayIntro();
             PlayerTwoSelection();
+            //RoundsToBePlayed();
             PlaySequence();
             DisplayWinner();
 
@@ -40,13 +42,23 @@ namespace RPSLS
             if(player1.playerScore >= 2)
             {
                 Console.WriteLine("Player One is the winner!");
+                Console.ReadLine();
             }
             else if(player2.playerScore >= 2)
             {
-                Console.WriteLine("Player Two wins... You lose");
+                Console.WriteLine("Player Two wins is the winner!");
+                Console.ReadLine();
             }
         }
+        //public int RoundsToBePlayed()
+        //{
+        //    Console.WriteLine("How many rounds would you like to play? For best of three enter '3', for best of five enter '5, and for best of 6 enter '6'.");
+        //    Console.ReadLine();
+        //    string index = Console.ReadLine();
+        //    int rounds = Int32.Parse(index);
+        //    return rounds;
 
+        //}
         public void DisplayIntro()
         {
             Console.WriteLine("Welcome to RPSLS");
@@ -55,7 +67,7 @@ namespace RPSLS
             Console.WriteLine("Rock crushes Scissors. Scissors cuts Paper. Paper cpvers Rock. Rock crushes Lizard. Lizard poisons Spock.");
             Console.WriteLine("Spock smashes Scissors. Scissor decapitates Lizard. Liazrd eats Paper. Paper disproves Spock. Spock vaporizes Rock.");
             Console.WriteLine("Best of three is the winner!");
-            Console.WriteLine("Press any key to continue...");
+            Console.WriteLine("Press enter key to continue...");
             Console.ReadLine();
         }
 
@@ -84,7 +96,7 @@ namespace RPSLS
         }
         public void PlaySequence()
         {
-            while (player1.playerScore <=1 && player2.playerScore <= 1)
+            while (player1.playerScore <= 1 && player2.playerScore <= 1)
             {
                 player1.ChooseGesture();
                 player2.ChooseGesture();
