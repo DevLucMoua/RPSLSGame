@@ -21,22 +21,28 @@ namespace RPSLS
             switch(input)
             {
                 case "0":
+                    chosenGesture = "rock";
                     break;
                 case "1":
+                    chosenGesture = "paper";
                     break;
                 case "2":
+                    chosenGesture = "scissors";
                     break;
                 case "3":
+                    chosenGesture = "lizard";
                     break;
                 case "4":
-                    break;
+                    chosenGesture = "spock";
+                    break; 
+
                 default:
                     Console.WriteLine("Invalid entry");
+                    
                     ChooseGesture();
                     break;
             }
-            int index = Int32.Parse(input);
-            chosenGesture = gestures[index];
+            Console.Clear();
         }
     }
 }
